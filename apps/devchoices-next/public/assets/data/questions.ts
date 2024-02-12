@@ -320,4 +320,15 @@ export const questions: QuestionInterface[] = [
       img_path: '/assets/img/rebase.jpg',
     },
   },
+  {
+    slug: 'indian-youtube-or-school-8000-euros-years',
+    choiceLeft: {
+      title: 'Indian YouTube Tutorial',
+      img_path: '/assets/img/indian-youtube-3.jpeg',
+    },
+    choiceRight: {
+      title: '"School costs 8000 euros per year."',
+      img_path: '/assets/img/graduation.jpg',
+    },
+  },
 ]
