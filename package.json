@@ -17,6 +17,7 @@
     "@storybook/addon-links": "^6.5.10",
     "animated-number-react": "^0.1.2",
     "core-js": "^3.6.5",
+    "express": "^4.19.2",
     "framer-motion": "^7.6.1",
     "next": "12.3.1",
     "next-seo": "^5.8.0",
@@ -28,6 +29,7 @@
     "regenerator-runtime": "0.13.7",
     "require-from-string": "^2.0.2",
     "semantic-release": "^19.0.5",
+    "sqlite3": "^5.1.7",
     "tslib": "^2.3.0",
     "webpack": ">=5.0.0 <6.0.0"
   },
@@ -95,11 +97,16 @@
     "url": "https://github.com/bdebon/dev-hard-choices.git"
   },
   "release": {
-    "branches": ["main", "staging"],
+    "branches": [
+      "main",
+      "staging"
+    ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      ["@semantic-release/github"]
+      [
+        "@semantic-release/github"
+      ]
     ]
   }
 }
