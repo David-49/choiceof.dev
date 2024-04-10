@@ -87,6 +87,10 @@ export function QuestionPage(props: QuestionPageProps) {
     await router.push(`/question/${computeNextQuestion()?.slug}`)
   }
 
+  const onGoToForm = async () => {
+    await router.push('/add-choices')
+  }
+
   const onSkip = async () => {
     if (question)
       await router.push('/question/' + questionContext.questions[questionContext.questions.indexOf(question) + 1].slug)
@@ -205,6 +209,7 @@ export function QuestionPage(props: QuestionPageProps) {
           onSkip={onSkip}
           onLeft={onLeft}
           onRight={onRight}
+          onGoToForm={onGoToForm}
         />
       )}
     </PageTransitionWrapper>
