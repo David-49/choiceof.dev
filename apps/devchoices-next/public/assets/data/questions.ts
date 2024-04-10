@@ -327,7 +327,7 @@ export const questions: QuestionInterface[] = [
       img_path: '/assets/img/indian-youtube-3.jpeg',
     },
     choiceRight: {
-      title: '"School costs 8000 euros per year."',
+      title: 'School costs 8000 euros per year.',
       img_path: '/assets/img/graduation.jpg',
     },
   },
