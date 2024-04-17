@@ -24,11 +24,15 @@ export function FormChoices() {
     const slug = generateSlug(titleLeft, titleRight)
     formData.append('slug', slug) // Ajoute le slug au formData
 
+    console.log(formData);
     // Envoie les données, y compris le slug, à l'API
-    const response = await fetch('/api/saveChoices', {
+    const response = await fetch('/api/questions', {
       method: 'POST',
       body: formData,
     })
+    console.log("Status Code:", response.status);
+console.log("Status Text:", response.statusText);
+
 
     if (response.ok) {
       router.push(`/questions/${slug}`)
